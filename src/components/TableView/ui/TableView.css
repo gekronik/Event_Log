@@ -1,0 +1,70 @@
+.table-view {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: auto;
+}
+.paginator{
+    margin-top: auto;
+}
+.p-datatable {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+}
+
+.p-datatable tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.p-datatable th,
+.p-datatable td {
+    border-right: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+
+.p-datatable tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.p-datatable tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .p-datatable {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .p-datatable th,
+    .p-datatable td {
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .p-datatable {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    .p-datatable th,
+    .p-datatable td {
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1025px) {
+    .p-datatable {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    .p-datatable th,
+    .p-datatable td {
+        white-space: nowrap;
+    }
+}
